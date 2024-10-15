@@ -1,0 +1,16 @@
+{
+  "name": "smeargle-js",
+  "version": "1.0.0",
+  "description": "Utilities for generating a json object representing a print document for PukaHTTP",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "tickets",
+    "SweetTicketDesign",
+    "json"
+  ],
+  "author": "PuyuPe",
+  "license": "MIT"
+}
