@@ -1,0 +1,13 @@
+{
+    "bitwise": true,
+    "esversion": 11,
+    "curly": true,
+    "eqnull": true,
+    "camelcase": true,
+    "freeze": true,
+    "indent": 4,
+    "maxlen": 180,
+    "noarg": true,
+    "nonew": true,
+    "undef": true
+}
