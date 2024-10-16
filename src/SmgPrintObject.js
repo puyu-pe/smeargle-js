@@ -1,7 +1,7 @@
-import SmgBlock from "./blocks/SmgBlock";
 import SmgDrawer from "./opendrawer/SmgDrawer";
 import SmgProperties from "./properties/SmgProperties";
 import SmgMapStyles from "./styles/SmgMapStyles";
+import SmgBlock from "./blocks/SmgBlock";
 
 class SmgPrintObject {
     constructor() {
@@ -10,16 +10,21 @@ class SmgPrintObject {
         this.metadata = {};
     }
 
+    /**
+     * @param {SmgProperties} properties
+     */
     setProperties(properties) {
-        const jsonProperties = properties.toJson();
-        if (jsonProperties !== null) {
-            this.object.properties = JSON.parse(jsonProperties);
+        if (properties && properties instanceof SmgProperties) {
+            const jsonProperties = properties.toJson();
+            if (jsonProperties !== null) {
+                this.object.properties = JSON.parse(jsonProperties);
+            }
         }
         return this;
     }
 
     addInfo(key, value) {
-        if(key){
+        if (key) {
             this.metadata[key] = value;
         }
         return this;
@@ -33,7 +38,7 @@ class SmgPrintObject {
      * @param {SmgBlock}  block
      */
     addBlock(block) {
-        if(block){
+        if (block && block instanceof SmgBlock) {
             this.data.push(JSON.parse(block.toJson()));
         }
         return this;
@@ -43,7 +48,9 @@ class SmgPrintObject {
      * @param {string} text
      */
     addText(text) {
-        this.data.push(text);
+        if (text) {
+            this.data.push(text);
+        }
         return this;
     }
 
@@ -53,7 +60,7 @@ class SmgPrintObject {
     openDrawer(openDrawer = true) {
         if (typeof openDrawer === 'boolean') {
             this.object.openDrawer = openDrawer;
-        } else {
+        } else if (openDrawer instanceof SmgDrawer) {
             this.object.openDrawer = JSON.parse(openDrawer.toJson());
         }
         return this;
