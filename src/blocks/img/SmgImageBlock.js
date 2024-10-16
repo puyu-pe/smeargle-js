@@ -12,12 +12,16 @@ class SmgImageBlock extends SmgBlock{
     }
 
     setPath(localPath) {
-        this.imgObject.path = localPath;
+        if(localPath){
+            this.imgObject.path = localPath;
+        }
         return this;
     }
 
     setClass(className) {
-        this.imgObject.class = className;
+        if(className){
+            this.imgObject.class = className;
+        }
         return this;
     }
 
