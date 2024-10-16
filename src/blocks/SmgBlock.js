@@ -1,6 +1,6 @@
 class SmgBlock {
     toJson() {
-        return "Method 'toJson()' must be implemented."
+        return "Method 'toJson()' must be implemented.";
     }
 }
 
