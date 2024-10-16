@@ -43,3 +43,5 @@ class SmgQrBlock {
         return JSON.stringify(this.object);
     }
 }
+
+export default SmgQrBlock;
