@@ -1,5 +1,5 @@
 {
-    "name": "smeargle-js",
+    "name": "@puyupe/smeargle-js",
     "scripts": {
         "build": "webpack --mode production --config ./webpack.config.js"
     },
