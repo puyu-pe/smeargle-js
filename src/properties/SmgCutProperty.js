@@ -1,4 +1,4 @@
-class SmgCutProperty {
+export class SmgCutProperty {
     constructor() {
         this.object = {};
     }
@@ -26,5 +26,3 @@ class SmgCutProperty {
         return JSON.stringify(this.object);
     }
 }
-
-export default SmgCutProperty;

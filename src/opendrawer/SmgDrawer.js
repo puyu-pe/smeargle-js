@@ -1,4 +1,4 @@
-class SmgDrawer {
+export class SmgDrawer {
 
     constructor() {
         this.object = {};
@@ -36,5 +36,3 @@ class SmgDrawer {
         return JSON.stringify(this.object, null, 2);
     }
 }
-
-export default SmgDrawer;

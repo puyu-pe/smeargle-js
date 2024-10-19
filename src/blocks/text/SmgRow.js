@@ -1,6 +1,6 @@
-import SmgCell from "./SmgCell";
+import {SmgCell} from "./SmgCell";
 
-class SmgRow {
+export class SmgRow {
     constructor() {
         this.row = [];
     }
@@ -27,5 +27,3 @@ class SmgRow {
         return JSON.stringify(this.row);
     }
 }
-
-export default SmgRow;

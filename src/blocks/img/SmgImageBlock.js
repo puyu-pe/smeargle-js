@@ -1,6 +1,6 @@
-import SmgBlock from '../SmgBlock.js';
+import {SmgBlock} from '../SmgBlock.js';
 
-class SmgImageBlock extends SmgBlock{
+export class SmgImageBlock extends SmgBlock{
     constructor() {
         super();
         this.object = { type: "img" };
@@ -32,5 +32,3 @@ class SmgImageBlock extends SmgBlock{
         return JSON.stringify(this.object);
     }
 }
-
-export default SmgImageBlock;

@@ -1,6 +1,6 @@
-import SmgJustify from "./SmgJustify";
+import {SmgJustify} from "./SmgJustify";
 
-class SmgStyle {
+export class SmgStyle {
 
     constructor() {
         this.object = {};
@@ -207,5 +207,3 @@ class SmgStyle {
         return this;
     }
 }
-
-export default SmgStyle;

@@ -1,4 +1,4 @@
-class SmgQrBlock {
+export class SmgQrBlock {
     constructor() {
         this.object = {type: "qr"};
         this.qrObject = {};
@@ -43,5 +43,3 @@ class SmgQrBlock {
         return JSON.stringify(this.object);
     }
 }
-
-export default SmgQrBlock;

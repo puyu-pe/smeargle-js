@@ -1,6 +1,6 @@
-import SmgStyle from "./SmgStyle";
+import {SmgStyle} from "./SmgStyle";
 
-class SmgMapStyles {
+export class SmgMapStyles {
     constructor() {
         this.object = {};
         this.globalStyle = SmgStyle.builder();
@@ -65,5 +65,3 @@ class SmgMapStyles {
         return JSON.stringify(this.object, null, 2);
     }
 }
-
-export default SmgMapStyles;

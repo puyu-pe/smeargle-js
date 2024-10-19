@@ -1,7 +1,7 @@
-import SmgProperties from '../properties/SmgProperties';
-import SmgStyle from '../styles/SmgStyle';
+import {SmgProperties} from '../properties/SmgProperties';
+import {SmgStyle} from '../styles/SmgStyle';
 
-class Smg {
+export class Smg {
     static blockWidth(charxels) {
         return SmgProperties.builder().setBlockWidth(charxels);
     }
@@ -150,5 +150,3 @@ class Smg {
         return SmgStyle.builder().left().bold().charxels(1000);
     }
 }
-
-export default Smg;

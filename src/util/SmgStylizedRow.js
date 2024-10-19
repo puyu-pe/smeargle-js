@@ -1,8 +1,8 @@
-import SmgRow from '../blocks/text/SmgRow';
-import SmgMapStyles from '../styles/SmgMapStyles';
-import SmgStyle from '../styles/SmgStyle';
+import {SmgRow} from '../blocks/text/SmgRow';
+import {SmgMapStyles} from '../styles/SmgMapStyles';
+import {SmgStyle} from '../styles/SmgStyle';
 
-class SmgStylizedRow {
+export class SmgStylizedRow {
     constructor() {
         this.row = new SmgRow();
         this.styles = new SmgMapStyles();
@@ -31,5 +31,3 @@ class SmgStylizedRow {
         return this.row;
     }
 }
-
-export default SmgStylizedRow;
