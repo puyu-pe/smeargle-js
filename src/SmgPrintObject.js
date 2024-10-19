@@ -1,9 +1,9 @@
-import SmgDrawer from "./opendrawer/SmgDrawer";
-import SmgProperties from "./properties/SmgProperties";
-import SmgMapStyles from "./styles/SmgMapStyles";
-import SmgBlock from "./blocks/SmgBlock";
+import {SmgDrawer} from "./opendrawer/SmgDrawer";
+import {SmgProperties} from "./properties/SmgProperties";
+import {SmgMapStyles} from "./styles/SmgMapStyles";
+import {SmgBlock} from "./blocks/SmgBlock";
 
-class SmgPrintObject {
+export class SmgPrintObject {
     constructor() {
         this.object = {};
         this.data = [];
@@ -84,5 +84,3 @@ class SmgPrintObject {
         return JSON.stringify(this.object, null, 2);
     }
 }
-
-export default SmgPrintObject;

@@ -1,6 +1,6 @@
-import SmgCutProperty from './SmgCutProperty.js';
+import {SmgCutProperty} from './SmgCutProperty.js';
 
-class SmgProperties {
+export class SmgProperties {
     constructor() {
         this.object = {};
     }
@@ -15,7 +15,7 @@ class SmgProperties {
     }
 
     setCut(cutProperty) {
-        if(cutProperty instanceof SmgCutProperty){
+        if (cutProperty instanceof SmgCutProperty) {
             const cut = cutProperty.toJson();
             if (cut !== null) {
                 this.object.cut = JSON.parse(cut);
@@ -31,5 +31,3 @@ class SmgProperties {
         return JSON.stringify(this.object);
     }
 }
-
-export default SmgProperties;

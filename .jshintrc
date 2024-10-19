@@ -7,6 +7,13 @@
     "freeze": true,
     "indent": 4,
     "maxlen": 180,
+    "globals": {
+        "path": true,
+        "__dirname": true,
+        "require":  true,
+        "window": true,
+        "module": true
+    },
     "noarg": true,
     "nonew": true,
     "undef": true

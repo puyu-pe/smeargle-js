@@ -1,13 +1,13 @@
-import SmgTextLayout from './SmgTextLayout';
-import SmgStylizedRow from './SmgStylizedRow';
-import SmgImageBlock from "../blocks/img/SmgImageBlock";
-import SmgProperties from "../properties/SmgProperties";
-import SmgPrintObject from "../SmgPrintObject";
-import SmgMapStyles from "../styles/SmgMapStyles";
-import SmgStyle from "../styles/SmgStyle";
-import SmgQrBlock from "../blocks/qr/SmgQrBlock";
+import {SmgTextLayout} from './SmgTextLayout';
+import {SmgStylizedRow} from './SmgStylizedRow';
+import {SmgImageBlock} from "../blocks/img/SmgImageBlock";
+import {SmgProperties} from "../properties/SmgProperties";
+import {SmgPrintObject} from "../SmgPrintObject";
+import {SmgMapStyles} from "../styles/SmgMapStyles";
+import {SmgStyle} from "../styles/SmgStyle";
+import {SmgQrBlock} from "../blocks/qr/SmgQrBlock";
 
-class SmgTicket {
+export class SmgTicket {
     constructor(properties = null, styles = null) {
         this.printObject = SmgPrintObject.builder();
         this.styles = styles ?? new SmgMapStyles();
@@ -114,5 +114,3 @@ class SmgTicket {
         return this.printObject.toJson();
     }
 }
-
-export default SmgTicket;

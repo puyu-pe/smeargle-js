@@ -1,4 +1,4 @@
-class SmgCell {
+export class SmgCell {
     constructor(text, className = null) {
         this.object = {};
         this.object.text = text;
@@ -19,5 +19,3 @@ class SmgCell {
         return JSON.stringify(this.object);
     }
 }
-
-export default SmgCell;

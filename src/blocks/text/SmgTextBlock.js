@@ -1,7 +1,7 @@
-import SmgRow from "./SmgRow";
-import SmgCell from "./SmgCell";
+import {SmgRow} from "./SmgRow";
+import {SmgCell} from "./SmgCell";
 
-class SmgTextBlock {
+export class SmgTextBlock {
     constructor(separator = null) {
         this.object = {type: "text"};
         this.rows = [];
@@ -46,5 +46,3 @@ class SmgTextBlock {
         return JSON.stringify(this.object);
     }
 }
-
-export default SmgTextBlock;

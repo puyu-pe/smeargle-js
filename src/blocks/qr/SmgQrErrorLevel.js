@@ -1,4 +1,4 @@
-const SmgQrErrorLevel = Object.freeze({
+export const SmgQrErrorLevel = Object.freeze({
     // 25%
     Q: "Q",
     // 7%
@@ -8,5 +8,3 @@ const SmgQrErrorLevel = Object.freeze({
     // 30%
     H: "H"
 });
-
-export default SmgQrErrorLevel;

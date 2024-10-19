@@ -1,11 +1,11 @@
-import Smg from './Smg'; // Asegúrate de que la ruta sea correcta
-import SmgStylizedRow from './SmgStylizedRow';
-import SmgCell from "../blocks/text/SmgCell";
-import SmgTextBlock from "../blocks/text/SmgTextBlock";
-import SmgMapStyles from "../styles/SmgMapStyles";
-import SmgStyle from "../styles/SmgStyle"; // Asegúrate de que la ruta sea correcta
+import {Smg} from './Smg';
+import {SmgStylizedRow} from './SmgStylizedRow';
+import {SmgCell} from "../blocks/text/SmgCell";
+import {SmgTextBlock} from "../blocks/text/SmgTextBlock";
+import {SmgMapStyles} from "../styles/SmgMapStyles";
+import {SmgStyle} from "../styles/SmgStyle";
 
-class SmgTextLayout {
+export class SmgTextLayout {
     constructor(separator = null) {
         this.textBlock = SmgTextBlock.builder(separator);
         this.styles = new SmgMapStyles();
@@ -53,5 +53,3 @@ class SmgTextLayout {
         return this.textBlock;
     }
 }
-
-export default SmgTextLayout;
