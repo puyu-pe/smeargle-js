@@ -1,16 +1,31 @@
 {
-  "name": "smeargle-js",
-  "version": "1.0.0",
-  "description": "Utilities for generating a json object representing a print document for PukaHTTP",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [
-    "tickets",
-    "SweetTicketDesign",
-    "json"
-  ],
-  "author": "PuyuPe",
-  "license": "MIT"
+    "name": "@puyu.pe/smeargle-js",
+    "scripts": {
+        "build": "webpack --mode production --config ./webpack.config.js"
+    },
+    "version": "0.1.0",
+    "description": "Utilities for generating a json object representing a print document for PukaHTTP",
+    "main": "./dist/smeargle.min.js",
+    "files": [
+        "dist/"
+    ],
+    "keywords": [
+        "tickets",
+        "SweetTicketDesign",
+        "json"
+    ],
+    "author": "PuyuPe",
+    "license": "MIT",
+    "devDependencies": {
+        "webpack": "^5.95.0",
+        "webpack-cli": "^5.1.4"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/puyu-pe/smeargle-js.git"
+    },
+    "bugs": {
+        "url": "https://github.com/puyu-pe/smeargle-js/issues"
+    },
+    "homepage": "https://github.com/puyu-pe/smeargle-js#readme"
 }
