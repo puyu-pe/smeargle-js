@@ -1,4 +1,3 @@
-import { SmgBlock } from "./src/blocks/SmgBlock.js";
 import { SmgImageBlock } from "./src/blocks/img/SmgImageBlock";
 import { SmgQrType } from "./src/blocks/qr/SmgQrType";
 import { SmgQrErrorLevel } from "./src/blocks/qr/SmgQrErrorLevel";
@@ -23,7 +22,6 @@ import { SmgPrintObject } from "./src/SmgPrintObject";
 
 if (typeof window !== 'undefined') {
     window.SmeargleJs = window.SmeargleJs || {};
-    window.SmeargleJs.SmgBlock = SmgBlock;
     window.SmeargleJs.SmgImageBlock = SmgImageBlock;
     window.SmeargleJs.SmgQrType = SmgQrType;
     window.SmeargleJs.SmgQrErrorLevel = SmgQrErrorLevel;
@@ -48,7 +46,6 @@ if (typeof window !== 'undefined') {
 }
 
 export {
-    SmgBlock,
     SmgImageBlock,
     SmgQrType,
     SmgQrErrorLevel,
