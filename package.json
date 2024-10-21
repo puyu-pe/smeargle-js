@@ -7,7 +7,9 @@
     "description": "Utilities for generating a json object representing a print document for PukaHTTP",
     "main": "./dist/smeargle.min.js",
     "files": [
-        "dist/"
+        "dist/",
+        "README.md",
+        "VERSION"
     ],
     "keywords": [
         "tickets",
