@@ -3,7 +3,7 @@
   "scripts": {
     "build": "webpack --mode production --config ./webpack.config.js"
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Utilities for generating a json object representing a print document for PukaHTTP",
   "main": "./dist/smeargle.min.js",
   "files": [
