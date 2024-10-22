@@ -22,27 +22,27 @@ import { SmgPrintObject } from "./src/SmgPrintObject";
 
 if (typeof window !== 'undefined') {
     window.SmeargleJs = window.SmeargleJs || {};
-    window.SmeargleJs.SmgImageBlock = SmgImageBlock;
-    window.SmeargleJs.SmgQrType = SmgQrType;
-    window.SmeargleJs.SmgQrErrorLevel = SmgQrErrorLevel;
-    window.SmeargleJs.SmgQrBlock = SmgQrBlock;
-    window.SmeargleJs.SmgCell = SmgCell;
-    window.SmeargleJs.SmgRow = SmgRow;
-    window.SmeargleJs.SmgTextBlock = SmgTextBlock;
-    window.SmeargleJs.SmgDrawer = SmgDrawer;
-    window.SmeargleJs.SmgDrawerPin = SmgDrawerPin;
-    window.SmeargleJs.SmgCutMode = SmgCutMode;
-    window.SmeargleJs.SmgCutProperty = SmgCutProperty;
-    window.SmeargleJs.SmgProperties = SmgProperties;
-    window.SmeargleJs.SmgJustify = SmgJustify;
-    window.SmeargleJs.SmgMapStyles = SmgMapStyles;
-    window.SmeargleJs.SmgScale = SmgScale;
-    window.SmeargleJs.SmgStyle = SmgStyle;
-    window.SmeargleJs.Smg = Smg;
-    window.SmeargleJs.SmgStylizedRow = SmgStylizedRow;
-    window.SmeargleJs.SmgTextLayout = SmgTextLayout;
-    window.SmeargleJs.SmgTicket = SmgTicket;
-    window.SmeargleJs.SmgPrintObject = SmgPrintObject;
+    window.SmeargleJs.ImageBlock = SmgImageBlock;
+    window.SmeargleJs.QrType = SmgQrType;
+    window.SmeargleJs.QrErrorLevel = SmgQrErrorLevel;
+    window.SmeargleJs.QrBlock = SmgQrBlock;
+    window.SmeargleJs.Cell = SmgCell;
+    window.SmeargleJs.Row = SmgRow;
+    window.SmeargleJs.TextBlock = SmgTextBlock;
+    window.SmeargleJs.Drawer = SmgDrawer;
+    window.SmeargleJs.DrawerPin = SmgDrawerPin;
+    window.SmeargleJs.CutMode = SmgCutMode;
+    window.SmeargleJs.CutProperty = SmgCutProperty;
+    window.SmeargleJs.Properties = SmgProperties;
+    window.SmeargleJs.Justify = SmgJustify;
+    window.SmeargleJs.MapStyles = SmgMapStyles;
+    window.SmeargleJs.Scale = SmgScale;
+    window.SmeargleJs.Style = SmgStyle;
+    window.SmeargleJs.StylizedRow = SmgStylizedRow;
+    window.SmeargleJs.TextLayout = SmgTextLayout;
+    window.SmeargleJs.Ticket = SmgTicket;
+    window.SmeargleJs.PrintObject = SmgPrintObject;
+    Object.assign(window.SmeargleJs, Smg);
 }
 
 export {
