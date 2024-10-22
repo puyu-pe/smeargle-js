@@ -39,7 +39,7 @@ export class Smg {
         return SmgStyle.builder().bold(value);
     }
 
-    static normalize(value = false) {
+    static normalize(value = true) {
         return SmgStyle.builder().normalize(value);
     }
 
