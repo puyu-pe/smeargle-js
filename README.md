@@ -32,7 +32,7 @@ con la ayuda de [PukaHTTP](https://github.com/puyu-pe/puka-http).
 
 ## Comenzando :rocket:
 
-Instalación mediante npm
+Instalación via npm
 
 ```shell
 npm i @puyu.pe/smeargle-js
@@ -40,12 +40,21 @@ npm i @puyu.pe/smeargle-js
 
 ![NPM Downloads](https://img.shields.io/npm/dm/%40puyu.pe%2Fsmeargle-js)
 
-O mediante CDN
+Mediante CDN (ultima versión)
 
 ```html
-
 <script src="https://unpkg.com/@puyu.pe/smeargle-js/dist/smeargle.min.js"></script>
 ```
+
+Mediante CDN (versión especifica), mas seguro.
+
+```html
+<script src="https://unpkg.com/@puyu.pe/smeargle-js@1.1.0/dist/smeargle.min.js"
+        integrity="sha384-ScgopMBvmZbxcWHv8RK4CzyGjmBNlG/dg48GYR20TQ6Jr8PAuUQeYX+IoGSizaLC"
+        crossorigin="anonymous"
+></script>
+```
+
 
 ## Hello word :bookmark_tabs:
 

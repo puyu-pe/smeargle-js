@@ -5,3 +5,5 @@
 
 # publish
 npm publish --access=public
+
+echo upload version: $(cat VERSION)

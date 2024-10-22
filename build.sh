@@ -7,3 +7,4 @@ jq --arg new_version "$VERSION" '.version = $new_version' package.json > temp.js
 # build
 rm -fr dist
 npm run build
+echo hash: sha384-$(openssl dgst -sha384 -binary ./dist/smeargle.min.js | openssl base64 -A )
