@@ -1,5 +1,8 @@
-export class SmgQrBlock {
+import {SmgBlock} from "../SmgBlock";
+
+export class SmgQrBlock extends SmgBlock{
     constructor() {
+        super();
         this.object = {type: "qr"};
         this.qrObject = {};
     }
