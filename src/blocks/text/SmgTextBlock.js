@@ -1,8 +1,10 @@
 import {SmgRow} from "./SmgRow";
 import {SmgCell} from "./SmgCell";
+import {SmgBlock} from "../SmgBlock";
 
-export class SmgTextBlock {
+export class SmgTextBlock extends SmgBlock{
     constructor(separator = null) {
+        super();
         this.object = {type: "text"};
         this.rows = [];
         if (separator && typeof (separator) === "string" && separator.trim() !== "") {

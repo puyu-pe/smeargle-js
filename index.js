@@ -1,24 +1,24 @@
-import { SmgImageBlock } from "./src/blocks/img/SmgImageBlock";
-import { SmgQrType } from "./src/blocks/qr/SmgQrType";
-import { SmgQrErrorLevel } from "./src/blocks/qr/SmgQrErrorLevel";
-import { SmgQrBlock } from "./src/blocks/qr/SmgQrBlock";
-import { SmgCell } from "./src/blocks/text/SmgCell";
-import { SmgRow } from "./src/blocks/text/SmgRow";
-import { SmgTextBlock } from "./src/blocks/text/SmgTextBlock";
-import { SmgDrawer } from "./src/opendrawer/SmgDrawer";
-import { SmgDrawerPin } from "./src/opendrawer/SmgDrawerPin";
-import { SmgCutMode } from "./src/properties/SmgCutMode";
-import { SmgCutProperty } from "./src/properties/SmgCutProperty";
-import { SmgProperties } from "./src/properties/SmgProperties";
-import { SmgJustify } from "./src/styles/SmgJustify";
-import { SmgMapStyles } from "./src/styles/SmgMapStyles";
-import { SmgScale } from "./src/styles/SmgScale";
-import { SmgStyle } from "./src/styles/SmgStyle";
-import { Smg } from "./src/util/Smg";
-import { SmgStylizedRow } from "./src/util/SmgStylizedRow";
-import { SmgTextLayout } from "./src/util/SmgTextLayout";
-import { SmgTicket } from "./src/util/SmgTicket";
-import { SmgPrintObject } from "./src/SmgPrintObject";
+import {SmgImageBlock, SmgImageBlock as ImageBlock} from "./src/blocks/img/SmgImageBlock";
+import {SmgQrType, SmgQrType as QrType} from "./src/blocks/qr/SmgQrType";
+import {SmgQrErrorLevel, SmgQrErrorLevel as QrErrorLevel} from "./src/blocks/qr/SmgQrErrorLevel";
+import {SmgQrBlock, SmgQrBlock as QrBlock} from "./src/blocks/qr/SmgQrBlock";
+import {SmgCell, SmgCell as Cell} from "./src/blocks/text/SmgCell";
+import {SmgRow, SmgRow as Row} from "./src/blocks/text/SmgRow";
+import {SmgTextBlock, SmgTextBlock as TextBlock} from "./src/blocks/text/SmgTextBlock";
+import {SmgDrawer, SmgDrawer as Drawer} from "./src/opendrawer/SmgDrawer";
+import {SmgDrawerPin, SmgDrawerPin as DrawerPin} from "./src/opendrawer/SmgDrawerPin";
+import {SmgCutMode, SmgCutMode as CutMode} from "./src/properties/SmgCutMode";
+import {SmgCutProperty, SmgCutProperty as CutProperty} from "./src/properties/SmgCutProperty";
+import {SmgProperties, SmgProperties as Properties} from "./src/properties/SmgProperties";
+import {SmgJustify, SmgJustify as Justify} from "./src/styles/SmgJustify";
+import {SmgMapStyles, SmgMapStyles as MapStyles} from "./src/styles/SmgMapStyles";
+import {SmgScale, SmgScale as Scale} from "./src/styles/SmgScale";
+import {SmgStyle, SmgStyle as Style} from "./src/styles/SmgStyle";
+import {Smg as Helper} from "./src/util/Smg";
+import {SmgStylizedRow, SmgStylizedRow as StylizedRow} from "./src/util/SmgStylizedRow";
+import {SmgTextLayout, SmgTextLayout as TextLayout} from "./src/util/SmgTextLayout";
+import {SmgTicket, SmgTicket as Ticket} from "./src/util/SmgTicket";
+import {SmgPrintObject, SmgPrintObject as PrintObject} from "./src/SmgPrintObject";
 
 if (typeof window !== 'undefined') {
     window.SmeargleJs = window.SmeargleJs || {};
@@ -42,29 +42,53 @@ if (typeof window !== 'undefined') {
     window.SmeargleJs.TextLayout = SmgTextLayout;
     window.SmeargleJs.Ticket = SmgTicket;
     window.SmeargleJs.PrintObject = SmgPrintObject;
-    Object.assign(window.SmeargleJs, Smg);
+    Object.assign(window.SmeargleJs, Helper);
 }
 
 export {
-    SmgImageBlock,
-    SmgQrType,
-    SmgQrErrorLevel,
-    SmgQrBlock,
-    SmgCell,
-    SmgRow,
-    SmgTextBlock,
-    SmgDrawer,
-    SmgDrawerPin,
-    SmgCutMode,
-    SmgCutProperty,
-    SmgProperties,
-    SmgJustify,
-    SmgMapStyles,
-    SmgScale,
-    SmgStyle,
-    Smg,
-    SmgStylizedRow,
-    SmgTextLayout,
-    SmgTicket,
-    SmgPrintObject
+    ImageBlock,
+    QrType,
+    QrErrorLevel,
+    QrBlock,
+    Cell,
+    Row,
+    TextBlock,
+    Drawer,
+    DrawerPin,
+    CutMode,
+    CutProperty,
+    Properties,
+    Justify,
+    MapStyles,
+    Scale,
+    Style,
+    StylizedRow,
+    TextLayout,
+    Ticket,
+    PrintObject
 };
+
+export const {
+    blockWidth,
+    center,
+    left,
+    right,
+    bold,
+    normalize,
+    fontWidth,
+    fontHeight,
+    fontSize,
+    bgInverted,
+    pad,
+    charxels,
+    width,
+    height,
+    size,
+    scale,
+    charCode,
+    leftBold,
+    rightBold,
+    centerBold,
+    title,
+    subtitle
+} = Helper;
